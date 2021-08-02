@@ -32,10 +32,10 @@ Things you may want to cover:
 |image|string|
 
 ### Association
---has_many :groups,through: :groups_users
---has_many :groups_users
---has_many :comments
---has_many :posts
+- has_many :groups,through: :groups_users
+- has_many :groups_users
+- has_many :comments
+- has_many :posts
 
 
 ## postsテーブル
@@ -47,8 +47,8 @@ Things you may want to cover:
 
 
 ### Association
---belongs_to :user
---has_many :comments
+- belongs_to :user
+- has_many :comments
 
 
 ## commentsテーブル
@@ -59,8 +59,8 @@ Things you may want to cover:
 |post_id|integer|null: false, foreign_key: true|
 
 ### Association
---belongs_to :user
---belongs_to :post
+- belongs_to :user
+- belongs_to :post
 
 ## groupsテーブル
 |Column|Type|Options|
@@ -69,8 +69,8 @@ Things you may want to cover:
 |content|text|null: false|
 
 ### Association
---has_many :users, through: :groups_users
---has_many :groups_users
+- has_many :users, through: :groups_users
+- has_many :groups_users
 
 ## groups_usersテーブル
 
