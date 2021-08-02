@@ -22,3 +22,25 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|integer|null: false|
+|email|integer|null: false,unique:true|
+|password|integer|null: false|
+|image|integer|
+
+### Association
+
+
+## groups_usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+
+### Association
+- belongs_to :group
+- belongs_to :user
